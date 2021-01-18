@@ -16,10 +16,8 @@ body{
 
   .flex-container .item {
     flex: 1 0 calc(200px);
-
     height: 600px;
     color: black;
-    background-color: lightgray;
   }
 
   h2 {
