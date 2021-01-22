@@ -1,1 +1,4 @@
 Kun je nog iets zeg waarom er twee manieren zijn: Get en Post? Wat is het voordeel van Get en wat van Post? In welke situaties gebruik je Get en wanneer Post?
+post gebruik je als je informatie wil maar je hoeft het niet op des site zelf te zien 
+en met get kan je dat wel gebruiken om het gelijk op de site te zien
+de url http://localhost/php-advanced/3-Forms/taak03/mijnmuziek.php?artiest=visigoth&titel=dungeon+master&jaar=2014&muzieksoort=heavy+metal&submit=vesrtuur

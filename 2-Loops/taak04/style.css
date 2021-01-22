@@ -1,0 +1,42 @@
+body{
+    background-color: lightblue;
+}
+
+.wrapper{
+    max-width: 700px;
+    max-height: 600px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    border: solid black;
+  }
+
+  .flex-container .item {
+    flex: 1 0 calc(200px);
+    height: 600px;
+    color: black;
+  }
+
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 6px;
+    margin-block-end: 10px;
+    margin-inline-start: 15px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.flex-container .button {
+  width: 200px;
+  height: 45px;
+  margin-left: 15px;
+  margin-top: 400px;
+}
+
+  label {
+  margin-left: 15px;
+  }

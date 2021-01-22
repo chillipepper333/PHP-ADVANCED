@@ -1,0 +1,23 @@
+.wrapper{
+    max-width: 800px;
+    max-height: 1000px;
+}
+
+.flex-container {
+    max-width: 280px;
+    max-height: 1000px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+.item {
+    justify-content: flex-end;
+    max-width: 200px;
+    flex: 1 0 calc(200px);
+    height: 600px;
+    color: black;
+  }
+
+
