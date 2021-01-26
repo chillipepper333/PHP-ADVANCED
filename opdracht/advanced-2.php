@@ -1,63 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="wrapper">
-    <div class="flex-container">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+                body {
+                    background-color: <?php echo $_POST["achtergrond-kleur"] ?> ;
+                    color: <?php echo $_POST["tekst-kleur"] ?>;
+                }
+                table,tr,td {
+                    padding: <?php echo $_POST["padding"] ?>px;
+                    border: <?php echo $_POST["border"] ?>px solid black;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="flex-container">
+                <table>
+                    <tr>
+                        <th>key</th>
+                        <th>value</th>
+                    </tr>
 
-    <style>
-body {
-    background-color: <?php echo $_POST["achtergrond-kleur"] ?> ;
-    color: <?php echo $_POST["tekst-kleur"] ?>;
-}
-table {
-    padding: <?php echo $_POST["padding"] ?>;
-    border: <?php echo $_POST["test"] ?> solid black;
-}
+                    <?php
+                        $info2= array("naam"=>"naam", "achternaam"=>"achternaam", "klas"=>"klas", "muziek"=>"favorite music");
+                        $info= array("naam"=>"wouter", "achternaam"=>"Baas", "klas"=>"0D", "muziek"=>"Heavy metal");
+                        
 
-</style>
+                        function maakrij($info2){
 
-<table>
-    <tr>
-    <th>key</th>
-    </tr>
+                                return $info2;
+                        }
+                            foreach($info2 as $index => $thing){
 
-<?php
-$info = array("naam", "achternaam", "klas", "favorite music");
-$info2 = array("Wouter", "Baas", "0D", "heavy metal");
+                                echo "<tr><td> $thing </td><td> $info[$index] </td></tr>";
+                            }
 
-function maakrij($info){
-    "<tr><td>$info</td></tr>";
-    return $info;}
-    maakrij("naam", "achternaam", "klas", "favorite music");
-    foreach($info as $value){
-        echo "<tr><td>$value</td></tr>";
-    }
-    
-?>
-</table>
-<table>
-    <tr>
-    <th>value</th>
-    </tr>
-<?php
-function maakrij2($info2){
-    "<tr><td>$info2</td></tr>";
-    return $info2;}
-    maakrij2("Wouter", "Baas", "0D", "heavy metal");
-foreach($info2 as $value2){
-    echo "<tr><td>$value2</td></tr>";
-}
-
-
-?>
-    
-</table>
-    </div>
-</div>
-</body>
-
+                    ?>
+                    
+                </table>
+            </div>
+        </div>
+    </body>
 </html>
 
